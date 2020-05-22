@@ -28,7 +28,7 @@ function showOrHide(){
 }
 
 
-function postComment() = {
+function postComment() {
     console.log(textarea);
     //????? update to "form" vs button later
 }
