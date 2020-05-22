@@ -9,27 +9,27 @@ CSS requirements:
 
 Stretch Goal: Use online resources to learn a little about the CSS properties of 'display' and 'position'. Incorporate them into your page.
 */
-#recipe-title{
+#recipe-title {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 28px;
     background-color: lightgrey;
     border: 10px solid grey; 
 }
 
-img{
+img {
     display: block;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     border: 2px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
- }
-#more{
-    display:none;
+}
+
+#more {
+    display: none;
 }
 
 .recipetext {
-
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
