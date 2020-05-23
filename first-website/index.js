@@ -1,4 +1,4 @@
-// define the function to operate your button here 
+// define the function to operate your button here
 
 
 /*eventually: create dropdown & button to double & 4x the recipe ingredients.
@@ -9,21 +9,28 @@ else if (servings = doubled){ingredientScale = ingredientsDoubled};
 esle if (servings = quintupled){ingredientScale=ingredientsQuintupled};*/
 
 
-function showOrHide(){
+function showOrHide() {
     var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
+    var moreText = document.getElementsByClassName("more");//created an array by accessing 2 classes, that does exactly what line 15does.  No change to for loop.
+    // var moreText = [ document.getElementById("more"), document.getElementById("signature") ] ;
     var readMoreButtonText = document.getElementById("readMoreButton");
 
-    if (dots.style.display==="none"){
-        dots.style.display="inline";
-        moreText.style.display="none";
-        readMoreButtonText.innerHTML="Read Less";
+    if (dots.style.display === "none") {
+        readMoreButtonText.innerHTML = "Read More";
         //this might be related to a way I can display diff ingredient numbers!!!!
-    } 
-    else{
-        dots.style.display="none";
-        moreText.style.display="inline";
-        readMoreButtonText.innerHTML="Read More";
+        dots.style.display = "inline";
+
+        for (var i = 0; i < moreText.length; i++) {
+            moreText[i].style.display = "none";
+        }
+    }
+    else {
+        readMoreButtonText.innerHTML = "Read Less";
+        dots.style.display = "none";
+
+        for (var i = 0; i < moreText.length; i++) {
+            moreText[i].style.display = "inline";
+        }
     }
 }
 

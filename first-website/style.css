@@ -5,31 +5,31 @@ CSS requirements:
 * a class selector X
 * an id selector X
 * use the following attributes: height, width, border, color, background-color, font-size
-* add margin and padding to two different elements  
+* add margin and padding to two different elements
 
 Stretch Goal: Use online resources to learn a little about the CSS properties of 'display' and 'position'. Incorporate them into your page.
 */
+/*style inspired by https://norecipes.com/filipino-garlic-rice-sinangag/*/
 #recipe-title {
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 28px;
     background-color: lightgrey;
-    border: 10px solid grey; 
+    border: 10px solid grey;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /*0 is for top/bottom, auto is for left/right */
     border: 2px solid #ddd;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    width: 40%;
 }
 
-#more {
+.more {
     display: none;
 }
 
 .recipetext {
     font-family: 'Montserrat', sans-serif;
-}
+} 
