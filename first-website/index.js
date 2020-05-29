@@ -17,7 +17,7 @@ function showOrHide() {
 
     if (dots.style.display === "none") {
         readMoreButtonText.innerHTML = "Read More";
-        //this might be related to a way I can display diff ingredient numbers!!!!
+        //this is related to a way I can display diff ingredient numbers!!!!
         dots.style.display = "inline";
 
         for (var i = 0; i < moreText.length; i++) {

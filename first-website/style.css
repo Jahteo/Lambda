@@ -10,26 +10,67 @@ CSS requirements:
 Stretch Goal: Use online resources to learn a little about the CSS properties of 'display' and 'position'. Incorporate them into your page.
 */
 /*style inspired by https://norecipes.com/filipino-garlic-rice-sinangag/*/
-#recipe-title {
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 28px;
-    background-color: lightgrey;
-    border: 10px solid grey;
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    
+}
+
+div { 
+    max-width: 680px;
+    padding: 5%;
+    margin: 0 auto;
+}
+#blogName {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0.5%;
+    margin: 0px;
+    max-width:100%;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: #383838;
+    color: #f1f1f1;
+}
+h1, #recipe-title {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-size: 22px
 }
 
 img {
     display: block;
-    margin: 0 auto; /*0 is for top/bottom, auto is for left/right */
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 40%;
+    max-width: 80%;
+    height: auto;
+    border: 2px solid #ffffff;
+    padding: 10%;
 }
 
+
+.recipetext {
+    box-sizing: border-box;
+    border: 2px solid #48305f;
+    box-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+#recipe-title {
+    text-align: center;
+    background: #48305f;
+    color: #ffffff;
+    padding: 50px;
+    text-transform: none;
+  
+}
 .more {
     display: none;
 }
 
-.recipetext {
-    font-family: 'Montserrat', sans-serif;
-} 
